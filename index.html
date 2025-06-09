@@ -34,6 +34,15 @@
         .stars {
             color: #facc15; /* yellow-400 - kept for star rating visibility */
         }
+        /* Style for SVG icons */
+        .icon {
+            display: block; /* Ensures it takes up full width for mx-auto */
+            width: 3rem; /* w-12 equivalent */
+            height: 3rem; /* h-12 equivalent */
+            margin-left: auto;
+            margin-right: auto;
+            fill: currentColor; /* Inherits text color from parent */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -100,61 +109,67 @@
         <div class="container mx-auto">
             <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Our HVAC Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1: Heating Repair & Installation -->
+                <!-- Service Card 1: Heating Repair & Installation (Furnace icon) -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                     <div class="text-blue-600 mb-4">
-                        <!-- Placeholder for heating icon. If you upload to root, change src. -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Heat" alt="Heating Icon" class="w-12 h-12 mx-auto rounded-full">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-2h2v2zm0-4H9v-2h2v2zm0-4H9V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Heating Repair & Installation</h3>
                     <p class="text-gray-600 text-center">From furnace repairs to new heating system installations, we keep you warm.</p>
                 </div>
 
-                <!-- Service Card 2: AC Repair & Installation -->
+                <!-- Service Card 2: AC Repair & Installation (Snowflake/AC icon) -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                     <div class="text-blue-600 mb-4">
-                        <!-- Placeholder for AC icon. If you upload to root, change src. -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=AC" alt="AC Icon" class="w-12 h-12 mx-auto rounded-full">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1.5c-4.66 0-8.46 3.75-8.46 8.35S7.34 18.2 12 18.2c4.66 0 8.46-3.75 8.46-8.35S16.66 1.5 12 1.5zm0 15.61c-3.9 0-7.07-3.14-7.07-7.01S8.1 3.09 12 3.09s7.07 3.14 7.07 7.01-3.17 7.01-7.07 7.01zm0-12.7c-.55 0-1 .45-1 1v2.58l-2.07 1.2a.5.5 0 00-.23.83l.89.88a.5.5 0 00.7.07L12 9.58l2.71 1.51a.5.5 0 00.7-.07l.89-.88a.5.5 0 00-.23-.83L13 7.58V5.09c0-.55-.45-1-1-1z"/>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">AC Repair & Installation</h3>
                     <p class="text-gray-600 text-center">Stay cool with our expert air conditioning repair, maintenance, and installation services.</p>
                 </div>
 
-                <!-- Service Card 3: HVAC Maintenance -->
+                <!-- Service Card 3: HVAC Maintenance (Wrench/Tools icon) -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                     <div class="text-blue-600 mb-4">
-                        <!-- Placeholder for maintenance icon. If you upload to root, change src. -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Maint" alt="Maintenance Icon" class="w-12 h-12 mx-auto rounded-full">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.7 19l-2.06-2.06c-.6.37-1.28.61-2 .72l-.74-2.22a8.04 8.04 0 002.32-3.15L20.84 9a.5.5 0 00-.7-.7l-2.22-.74c.1-.72.34-1.4.72-2L15 1.3A.5.5 0 0014.3.6l-.74 2.22c-.72-.1-1.4-.34-2-.72L9 1.3A.5.5 0 008.3.6l-.74 2.22c-.72-.1-1.4-.34-2-.72L1.3 9A.5.5 0 00.6 9.7l2.22.74c-.1.72-.34 1.4-.72 2L1.3 15A.5.5 0 00.6 15.7l2.22.74c-.1.72-.34 1.4-.72 2L9 22.7A.5.5 0 009.7 23.4l.74-2.22c.72.1 1.4.34 2 .72L15 22.7A.5.5 0 0015.7 23.4l.74-2.22c.72.1 1.4.34 2 .72L22.7 19a.5.5 0 00.7-.7zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Preventative Maintenance</h3>
                     <p class="text-gray-600 text-center">Regular tune-ups to extend the life of your system and ensure peak efficiency.</p>
                 </div>
 
-                <!-- Service Card 4: Indoor Air Quality -->
+                <!-- Service Card 4: Indoor Air Quality (Fan/Air icon) -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                     <div class="text-blue-600 mb-4">
-                        <!-- Placeholder for air quality icon. If you upload to root, change src. -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Air" alt="Air Quality Icon" class="w-12 h-12 mx-auto rounded-full">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-12h4c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2zm-2 2H8v2h8v-2h-2V7h-4V9z"/>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Indoor Air Quality</h3>
                     <p class="text-gray-600 text-center">Solutions for cleaner, healthier air in your home or office.</p>
                 </div>
 
-                <!-- Service Card 5: Emergency Services -->
+                <!-- Service Card 5: Emergency Services (Lightning bolt icon) -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                     <div class="text-blue-600 mb-4">
-                        <!-- Placeholder for emergency icon. If you upload to root, change src. -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=24/7" alt="Emergency Icon" class="w-12 h-12 mx-auto rounded-full">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2H6v10h4v8l7-10h-4l3-8z"/>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Emergency Services</h3>
                     <p class="text-gray-600 text-center">24/7 rapid response for urgent heating and cooling issues.</p>
                 </div>
 
-                <!-- Service Card 6: Commercial HVAC -->
+                <!-- Service Card 6: Commercial HVAC (Building icon) -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
                     <div class="text-blue-600 mb-4">
-                        <!-- Placeholder for commercial building icon. If you upload to root, change src. -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Comm" alt="Commercial Icon" class="w-12 h-12 mx-auto rounded-full">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12h-2V7h-3V3H8v4H5v5H3v2h2v5h3v-5h4v5h3v-5h2v5h3v-5h2v-2h-2zm-7-9h3v4h-3V3zM8 5h3v2H8V5z"/>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Commercial HVAC</h3>
                     <p class="text-gray-600 text-center">Specialized services for businesses of all sizes.</p>
