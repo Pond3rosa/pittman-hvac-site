@@ -1,276 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Pittman Heating & Cooling - Expert HVAC Services in Spanish Fork, UT</title>
- <script src="https://cdn.tailwindcss.com"></script>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <style>
- body {
- font-family: 'Inter', sans-serif;
- background-color: #f8fafc; /* Light Slate 50 */
- color: #1e293b; /* Slate 900 */
- }
- .container {
- max-width: 1200px;
- }
- /* Custom styles for review section */
- .review-card {
- background-color: #ffffff;
- border-radius: 1rem; /* rounded-xl */
- box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
- padding: 2rem; /* p-8 */
- transition: all 0.3s ease-in-out; /* transition duration-300 */
- display: flex;
- flex-direction: column;
- justify-content: space-between; /* Distribute space between content */
- }
- .review-card:hover {
- box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-lg */
- transform: translateY(-0.25rem); /* hover:-translate-y-1 */
- }
- .stars {
- color: #facc15; /* yellow-400 - kept for star rating visibility */
- }
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pittman Heating & Cooling - Expert HVAC Services in Spanish Fork, UT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+            color: #1e293b; /* Slate 900 */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styles for review section */
+        .review-card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 2rem; /* p-8 */
+            transition: all 0.3s ease-in-out; /* transition duration-300 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute space between content */
+        }
+        .review-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-lg */
+            transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+        }
+        .stars {
+            color: #facc15; /* yellow-400 - kept for star rating visibility */
+        }
+    </style>
 </head>
 <body class="antialiased">
- <header class="bg-white shadow-sm py-4 px-4 sm:px-6 lg:px-8">
- <div class="container mx-auto flex justify-between items-center">
- <a href="#" class="flex items-center space-x-2">
- <img src="https://placehold.co/40x40/BFDBFE/1E40AF?text=HVAC" alt="Pittman Heating & Cooling Logo" class="h-10 w-10 rounded-full">
- <span class="text-xl sm:text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition duration-300">Pittman Heating & Cooling</span>
- </a>
+    <header class="bg-white shadow-md py-5 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <div class="bg-blue-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-semibold text-lg">
+                    PHC
+                </div>
+                <span class="ml-3 text-xl sm:text-2xl font-semibold text-blue-700">Pittman Heating & Cooling</span>
+            </a>
 
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="tel:8015926671" class="text-blue-700 hover:text-blue-900 font-semibold text-lg transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> 801-592-6671
+                </a>
+            </div>
 
- <div class="hidden md:flex items-center space-x-4">
- <a href="tel:8015926671" class="text-blue-700 hover:text-blue-900 font-semibold text-lg transition duration-300">
- Call Us: 801-592-6671
- </a>
- </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
 
+        <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 px-2 pb-3 hidden">
+            <a href="#" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Home</a>
+            <a href="#services" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Services</a>
+            <a href="#testimonials" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Testimonials</a>
+            <a href="#about" class="block text-blue-700 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">About Us</a>
+            <a href="#contact" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Contact</a>
+            <a href="tel:8015926671" class="block text-blue-700 hover:text-blue-900 font-semibold transition duration-300 rounded-md p-2 hover:bg-gray-50"><i class="fas fa-phone-alt mr-2"></i> 801-592-6671</a>
+        </nav>
+    </header>
 
- <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
- <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
- </svg>
- </button>
- </div>
+    <section class="relative bg-gradient-to-r from-blue-700 to-blue-900 text-white py-20 px-4 sm:px-6 lg:px-8 rounded-b-xl shadow-lg overflow-hidden">
+        <img src="AdobeStock_386896867.jpeg" alt="HVAC Technician working on a unit" class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                Expert Heating & Cooling Services
+            </h1>
+            <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Reliable HVAC solutions for your home or business in Spanish Fork, UT, and surrounding areas.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="tel:8015926671" class="w-full sm:w-auto bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-4 sm:px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-base sm:text-lg">Call Now: 801-592-6671</a>
+                <a href="#contact" class="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-4 sm:px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-base sm:text-lg">Get a Free Estimate</a>
+            </div>
+            <p class="mt-8 text-sm opacity-80">
+                Located at: 183 N 1280 E, Spanish Fork, UT 84660
+            </p>
+        </div>
+    </section>
 
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Our HVAC Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <i class="fas fa-fire-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Heating Repair & Installation</h3>
+                    <p class="text-gray-600 text-center">From furnace repairs to new heating system installations, we keep you warm.</p>
+                </div>
 
- <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 px-2 pb-3 hidden">
- <a href="#" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Home</a>
- <a href="#services" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Services</a>
- <a href="#testimonials" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Testimonials</a>
- <a href="#about" class="block text-blue-700 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">About Us</a>
- <a href="#contact" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Contact</a>
- <a href="tel:8015926671" class="block text-blue-700 hover:text-blue-900 font-semibold transition duration-300 rounded-md p-2 hover:bg-gray-50">Call Us: 801-592-6671</a>
- </nav>
- </header>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <i class="fas fa-snowflake fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">AC Repair & Installation</h3>
+                    <p class="text-gray-600 text-center">Stay cool with our expert air conditioning repair, maintenance, and installation services.</p>
+                </div>
 
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <i class="fas fa-wrench fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Preventative Maintenance</h3>
+                    <p class="text-gray-600 text-center">Regular tune-ups to extend the life of your system and ensure peak efficiency.</p>
+                </div>
 
- <section class="relative bg-gradient-to-r from-blue-700 to-blue-900 text-white py-20 px-4 sm:px-6 lg:px-8 rounded-b-xl shadow-lg overflow-hidden">
- <img src="AdobeStock_386896867.jpeg" alt="HVAC Technician working on a unit" class="absolute inset-0 w-full h-full object-cover opacity-30">
- <div class="container mx-auto text-center relative z-10">
- <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
- Expert Heating & Cooling Services
- </h1>
- <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
- Reliable HVAC solutions for your home or business in Spanish Fork, UT, and surrounding areas.
- </p>
- <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
- <a href="tel:8015926671" class="w-full sm:w-auto bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-4 sm:px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-base sm:text-lg">Call Now: 801-592-6671</a>
- <a href="#contact" class="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-4 sm:px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-base sm:text-lg">Get a Free Estimate</a>
- </div>
- <p class="mt-8 text-sm opacity-80">
- Located at: 183 N 1280 E, Spanish Fork, UT 84660
- </p>
- </div>
- </section>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <i class="fas fa-wind fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Indoor Air Quality</h3>
+                    <p class="text-gray-600 text-center">Solutions for cleaner, healthier air in your home or office.</p>
+                </div>
 
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <i class="fas fa-exclamation-triangle fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Emergency Services</h3>
+                    <p class="text-gray-600 text-center">24/7 rapid response for urgent heating and cooling issues.</p>
+                </div>
 
- <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
- <div class="container mx-auto">
- <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Our HVAC Services</h2>
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
- <div class="text-blue-600 mb-4 flex justify-center">
- <i class="fas fa-fire-alt fa-3x"></i>
- </div>
- <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Heating Repair & Installation</h3>
- <p class="text-gray-600 text-center">From furnace repairs to new heating system installations, we keep you warm.</p>
- </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <i class="fas fa-building fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Commercial HVAC</h3>
+                    <p class="text-gray-600 text-center">Specialized services for businesses of all sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">About Pittman Heating & Cooling</h2>
 
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
- <div class="text-blue-600 mb-4 flex justify-center">
- <i class="fas fa-snowflake fa-3x"></i>
- </div>
- <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">AC Repair & Installation</h3>
- <p class="text-gray-600 text-center">Stay cool with our expert air conditioning repair, maintenance, and installation services.</p>
- </div>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    At Pittman Heating and Cooling, we are completely dedicated to delivering high-quality HVAC services to homeowners and businesses throughout Spanish Fork, Utah, and more. Known for reliable service, professional workmanship, and a strong commitment to customer satisfaction.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    From heating and air conditioning to ventilation solutions, we approach every job with integrity, precision, and care. Our team of experienced technicians is equipped to handle all your HVAC needs, ensuring your indoor environment is comfortable and healthy year-round.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    With a focus on long-term comfort and dependable performance, we stand behind our work with a quality guarantee and a reputation built on trust. Choose Pittman Heating & Cooling for service you can rely on.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="review-card">
+                    <div>
+                        <div class="text-center mb-4">
+                            <span class="stars text-3xl">★★★★★</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-center">
+                            "Dan is terrific. He responded quickly, came right over, and was able to quickly diagnose and fix an issue with our furnace after another company failed to find the issue. He explains everything he's doing and why. Highly recommend you give Dan a call if you have furnace issues."
+                        </p>
+                    </div>
+                    <p class="text-gray-600 font-medium text-right mt-auto">- Jeff Goeders, Local Guide</p>
+                </div>
 
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
- <div class="text-blue-600 mb-4 flex justify-center">
- <i class="fas fa-wrench fa-3x"></i>
- </div>
- <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Preventative Maintenance</h3>
- <p class="text-gray-600 text-center">Regular tune-ups to extend the life of your system and ensure peak efficiency.</p>
- </div>
+                <div class="review-card">
+                    <div>
+                        <div class="text-center mb-4">
+                            <span class="stars text-3xl">★★★★★</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-center">
+                            "Dan is about the most trustworthy, caring guy I've ever done business with. Would ABSOLUTELY recommend to anyone with HVAC issues! He knows what he's talking about and genuinely cares about the well being of those who he deals with!"
+                        </p>
+                    </div>
+                    <p class="text-gray-600 font-medium text-right mt-auto">- Austin Garrett</p>
+                </div>
 
+                <div class="review-card">
+                    <div>
+                        <div class="text-center mb-4">
+                            <span class="stars text-3xl">★★★★★</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-center">
+                            "Dan is amazing! He is so knowledgeable and friendly. He was quick to answer our call and took great care of us. I highly recommend him!"
+                        </p>
+                    </div>
+                    <p class="text-gray-600 font-medium text-right mt-auto">- Alice Ferrell</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
- <div class="text-blue-600 mb-4 flex justify-center">
- <i class="fas fa-wind fa-3x"></i>
- </div>
- <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Indoor Air Quality</h3>
- <p class="text-gray-600 text-center">Solutions for cleaner, healthier air in your home or office.</p>
- </div>
+    <section class="bg-blue-700 text-white py-16 px-4 sm:px-6 lg:px-8 rounded-xl mx-4 sm:mx-auto max-w-6xl shadow-xl">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Need HVAC Service? We're Here to Help!</h2>
+            <p class="text-lg mb-8 opacity-90">
+                Don't let heating or cooling issues disrupt your comfort. Contact us today for reliable and efficient service.
+            </p>
+            <a href="tel:8015926671" class="w-full sm:w-auto bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-4 sm:px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-sm sm:text-lg">Call Pittman Heating & Cooling: 801-592-6671</a>
+        </div>
+    </section>
 
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">Contact Us</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 w-full md:w-1/2 lg:w-1/3">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h3>
+                    <p class="text-gray-700 mb-2">
+                        <strong class="text-blue-700">Phone:</strong> <a href="tel:8015926671" class="text-blue-700 hover:underline">801-592-6671</a>
+                    </p>
+                    <p class="text-gray-700 mb-2">
+                        <strong class="text-blue-700">Address:</strong> 183 N 1280 E, Spanish Fork, UT 84660
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=183+N+1280+E,+Spanish+Fork,+UT+84660" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline mt-4 inline-block">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
- <div class="text-blue-600 mb-4 flex justify-center">
- <i class="fas fa-exclamation-triangle fa-3x"></i>
- </div>
- <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Emergency Services</h3>
- <p class="text-gray-600 text-center">24/7 rapid response for urgent heating and cooling issues.</p>
- </div>
+    <footer class="bg-gray-800 text-gray-300 py-10 mt-16 px-4 sm:px-6 lg:px-8 rounded-t-xl">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-xl font-semibold text-white mb-2">Pittman Heating & Cooling</h3>
+                <p>© 2025 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
- <div class="text-blue-600 mb-4 flex justify-center">
- <i class="fas fa-building fa-3x"></i>
- </div>
- <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Commercial HVAC</h3>
- <p class="text-gray-600 text-center">Specialized services for businesses of all sizes.</p>
- </div>
- </div>
- </div>
- </section>
-
-
- <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
- <div class="container mx-auto max-w-4xl">
- <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">About Pittman Heating & Cooling</h2>
-
-
- <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
- <p class="text-lg text-gray-700 leading-relaxed mb-6">
- At Pittman Heating and Cooling, we are completely dedicated to delivering high-quality HVAC services to homeowners and businesses throughout Spanish Fork, Utah, and more. Known for reliable service, professional workmanship, and a strong commitment to customer satisfaction.
- </p>
- <p class="text-lg text-gray-700 leading-relaxed mb-6">
- From heating and air conditioning to ventilation solutions, we approach every job with integrity, precision, and care. Our team of experienced technicians is equipped to handle all your HVAC needs, ensuring your indoor environment is comfortable and healthy year-round.
- </p>
- <p class="text-lg text-gray-700 leading-relaxed">
- With a focus on long-term comfort and dependable performance, we stand behind our work with a quality guarantee and a reputation built on trust. Choose Pittman Heating & Cooling for service you can rely on.
- </p>
- </div>
-
-
- </div>
- </section>
-
-
- <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8">
- <div class="container mx-auto">
- <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">What Our Customers Say</h2>
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
- <div class="review-card">
- <div>
- <div class="text-center mb-4">
- <span class="stars text-3xl">★★★★★</span>
- </div>
- <p class="text-gray-700 italic mb-4 text-center">
- "Dan is terrific. He responded quickly, came right over, and was able to quickly diagnose and fix an issue with our furnace after another company failed to find the issue. He explains everything he's doing and why. Highly recommend you give Dan a call if you have furnace issues."
- </p>
- </div>
- <p class="text-gray-600 font-medium text-right mt-auto">- Jeff Goeders, Local Guide</p>
- </div>
-
-
- <div class="review-card">
- <div>
- <div class="text-center mb-4">
- <span class="stars text-3xl">★★★★★</span>
- </div>
- <p class="text-gray-700 italic mb-4 text-center">
- "Dan is about the most trustworthy, caring guy I've ever done business with. Would ABSOLUTELY recommend to anyone with HVAC issues! He knows what he's talking about and genuinely cares about the well being of those who he deals with!"
- </p>
- </div>
- <p class="text-gray-600 font-medium text-right mt-auto">- Austin Garrett</p>
- </div>
-
-
- <div class="review-card">
- <div>
- <div class="text-center mb-4">
- <span class="stars text-3xl">★★★★★</span>
- </div>
- <p class="text-gray-700 italic mb-4 text-center">
- "Dan is amazing! He is so knowledgeable and friendly. He was quick to answer our call and took great care of us. I highly recommend him!"
- </p>
- </div>
- <p class="text-gray-600 font-medium text-right mt-auto">- Alice Ferrell</p>
- </div>
- </div>
- </div>
- </section>
-
-
- <section class="bg-blue-700 text-white py-16 px-4 sm:px-6 lg:px-8 rounded-xl mx-4 sm:mx-auto max-w-6xl shadow-xl">
- <div class="container mx-auto text-center">
- <h2 class="text-3xl sm:text-4xl font-bold mb-6">Need HVAC Service? We're Here to Help!</h2>
- <p class="text-lg mb-8 opacity-90">
- Don't let heating or cooling issues disrupt your comfort. Contact us today for reliable and efficient service.
- </p>
- <a href="tel:8015926671" class="w-full sm:w-auto bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-4 sm:px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-sm sm:text-lg">Call Pittman Heating & Cooling: 801-592-6671</a>
- </div>
- </section>
-
-
- <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
- <div class="container mx-auto text-center">
- <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">Contact Us</h2>
- <div class="flex flex-col md:flex-row justify-center items-center">
- <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 w-full md:w-1/2 lg:w-1/3">
- <h3 class="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h3>
- <p class="text-gray-700 mb-2">
- <strong class="text-blue-700">Phone:</strong> <a href="tel:8015926671" class="text-blue-700 hover:underline">801-592-6671</a>
- </p>
- <p class="text-gray-700 mb-2">
- <strong class="text-blue-700">Address:</strong> 183 N 1280 E, Spanish Fork, UT 84660
- </p>
- <a href="https://www.google.com/maps/search/?api=1&query=183+N+1280+E,+Spanish+Fork,+UT+84660" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline mt-4 inline-block">
- Get Directions
- </a>
- </div>
- </div>
- </div>
- </section>
-
-
- <footer class="bg-gray-800 text-gray-300 py-10 mt-16 px-4 sm:px-6 lg:px-8 rounded-t-xl">
- <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
- <div class="mb-6 md:mb-0">
- <h3 class="text-xl font-semibold text-white mb-2">Pittman Heating & Cooling</h3>
- <p>© 2025 All rights reserved.</p>
- </div>
- </div>
- </footer>
-
-
- <script>
- // JavaScript for mobile menu toggle
- const mobileMenuButton = document.getElementById('mobile-menu-button');
- const mobileMenu = document.getElementById('mobile-menu');
-
-
- mobileMenuButton.addEventListener('click', () => {
- mobileMenu.classList.toggle('hidden');
- });
- </script>
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
